@@ -12,9 +12,9 @@ def test_sum_list(numbers, expected):
     assert sum_list(numbers) == expected
 
 
-# Test count_negatives against three distinct input cases
+# # Test count_negatives against three distinct input cases
 @pytest.mark.parametrize("numbers, expected", [
-    ([1, -2, -3, 4], 2),     
+    ([1, -2, -3, 4], 99),     # ❌ CHANGED FROM 2 TO 99 (INTENTIONAL FAILURE)
     ([1, 2, 3, 4], 0),       
     ([-5, -10, -15], 3)      
 ])
